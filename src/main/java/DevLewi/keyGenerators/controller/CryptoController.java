@@ -24,6 +24,7 @@ import static DevLewi.keyGenerators.utils.exceptions.ApiResponseUtils.REQUEST_SU
 public class CryptoController {
     private final CryptoService cryptoService;
 
+    //encrypt
     @PostMapping("/encrypt")
     public ResponseEntity<ApiResponse> encrypt(@RequestBody EncryptionRequest request){
         try{
